@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/49d12d7293.js" crossorigin="anonymous"></script>
+    <link href="css/output.css" rel="stylesheet">
+    <title>Porfoilo</title>
+</head>
+
+<body class="m-0 p-0 box-border bg-[#f4f4f4]  font-serif">
+
+    <!-- Header Section -->
+
+    <header class="h-24 md:h-32 bg-linear-65 from-gray-500 to-gray-400" id="home">
+        <div class="flex justify-between fixed w-full bg-linear-65 from-gray-500 to-gray-400
+                h-20 md:h-32 px-4 md:px-16 items-center z-10">
+            <p class="cursor-pointer text-2xl md:text-3xl text-white font-semibold">KARIB</p>
+            <nav>
+                <ul class="hidden md:flex gap-4 lg:gap-8 text-white font-medium text-lg">
+                    <li class="hover:text-black hover:duration-500"><a href="#home">Home</a></li>
+                    <li class="hover:text-black hover:duration-500"><a href="#about">About</a></li>
+                    <li class="hover:text-black hover:duration-500"><a href="#projects">Projects</a></li>
+                    <li class="hover:text-black hover:duration-500"><a href="#services">Services</a></li>
+                    <li class="hover:text-black hover:duration-500"><a href="#contact">Contact</a></li>
+                </ul>
+
+                <div class="mt-5 pr-5  text-2xl md:hidden " id="menu">
+                    <a class=" text-white" href="#"><i class="fa-solid fa-list"></i></a>
+                </div>
+
+                <ul id="mobileMenu" class="hidden flex-col absolute left-0 top-20 w-full bg-gray-700
+                text-white py-4 space-y-4 text-left pl-5">
+                    <li class="hover:text-black hover:duration-500"><a href="#home">Home</a></li>
+                    <li class="hover:text-black hover:duration-500"><a href="#about">About</a></li>
+                    <li class="hover:text-black hover:duration-500"><a href="#projects">Projects</a></li>
+                    <li class="hover:text-black hover:duration-500"><a href="#services">Services</a></li>
+                    <li class="hover:text-black hover:duration-500"><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Profile Section -->
+
+    <section
+        class="flex flex-col md:flex-row justify-around items-center text-center md:text-left p-6 md:p-12 bg-white ">
+        <div class="mb-6 md:mb-0">
+            <h4 class="text-4xl md:text-5xl font-bold"><span class="text-[#141212] ">Hey There</span>,<span
+                    class="text-gray-500 ">I'm Karib</span></h4>
+            <h2 class="text-4xl md:text-5xl font-bold tracking-wider "><span class="text-gray-500 ">Web </span> <span
+                    class="text-[#141212] ">Developer</span></h2>
+            <p class="text-lg md:text-xl text-[#141212] font-light pt-5">A self-driven developer always learning and
+                <br>building
+                better web solutions.
+            </p>
+        </div>
+        <div>
+            <img class="w-40 md:w-[220px] rounded-4xl border-4 border-solid border-[#333]" src="Images/picture.jpeg"
+                alt="Profile Picture">
+        </div>
+    </section>
+
+    <!-- About Section -->
+
+    <section class="mt-30 px-4 md:px-20 mb-40" id="about">
+        <h1 class="text-3xl md:text-4xl font-bold text-center pb-3">About Me</h1>
+        <p class="text-base md:text-xl tracking-wide text-center font-light text-[#141212] leading-relaxed">Hi, I'm
+            <span class="font-semibold">Sharfuddin Karib</span> — a passionate Web Developer learning and building new
+            things every day. I love turning ideas into real, user-friendly websites using clean code and creative
+            design.
+            Expert in HTML, CSS, JavaScript, Python & SQL. I have done more than <span class="font-semibold">100+</span>
+            projects
+            worldwide.
+        </p>
+    </section>
+
+    <!-- Project Section -->
+
+    <section id="projects" class="m-30">
+        <h1 class="text-3xl md:text-4xl text-center font-bold mb-10">Projects</h1>
+
+        <div class="w-full h-auto
+                flex flex-col sm:flex-row
+                flex-wrap justify-center gap-10
+                bg-white pt-10 pb-10">
+
+            <div class="w-[90%] sm:w-[300px] h-[350px] shadow-xl bg-white mx-auto sm:mx-0">
+                <div class="overflow-hidden">
+                    <img class="w-full h-[200px] object-cover hover:scale-110 duration-300"
+                        src="Images/e-commerce_image.jpg" alt="Picture">
+                </div>
+                <h2 class="font-semibold text-center pt-4 text-lg pb-3 hover:underline duration-500">
+                    <a href="#">E-Commerce Website</a>
+                </h2>
+                <p class="text-center font-extralight">
+                    Built using HTML, CSS, JavaScript<br>
+                    User-friendly UI for online shopping
+                </p>
+            </div>
+
+            <div class="w-[90%] sm:w-[300px] h-[350px] shadow-xl bg-white mx-auto sm:mx-0">
+                <div class="overflow-hidden">
+                    <img class="w-full h-[200px] object-cover hover:scale-110 duration-300"
+                        src="Images/porfoilo_image.jpg" alt="Picture">
+                </div>
+                <h2 class="font-semibold text-center pt-4 text-lg pb-3 hover:underline duration-500">
+                    <a href="#">Portfolio Website</a>
+                </h2>
+                <p class="text-center font-extralight">
+                    Fully responsive personal portfolio<br>
+                    Modern layout using Flexbox
+                </p>
+            </div>
+
+            <div class="w-[90%] sm:w-[300px] h-[350px] shadow-xl bg-white mx-auto sm:mx-0">
+                <div class="overflow-hidden">
+                    <img class="w-full h-[200px] object-cover hover:scale-110 duration-300"
+                        src="Images/student management_image.jpg" alt="Picture">
+                </div>
+                <h2 class="font-semibold text-center pt-4 text-lg pb-3 hover:underline duration-500">
+                    <a href="#">Student Management System</a>
+                </h2>
+                <p class="text-center font-extralight">
+                    CRUD operations with MySQL<br>
+                    Dashboard for student info tracking
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="bg-white py-16 px-4 md:px-20">
+        <h1 class="text-3xl md:text-4xl font-bold text-center mb-12">My Statistics</h1>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
+            <div
+                class="stat-card text-center p-6 rounded-lg shadow-md bg-gradient-to-br from-blue-50 to-blue-100 hover:shadow-lg transition duration-300">
+                <h3 class="stat-number text-3xl md:text-4xl font-bold text-blue-600">100+</h3>
+                <p class="text-gray-600 font-medium mt-2">Projects Completed</p>
+            </div>
+            <div
+                class="stat-card text-center p-6 rounded-lg shadow-md bg-gradient-to-br from-green-50 to-green-100 hover:shadow-lg transition duration-300">
+                <h3 class="stat-number text-3xl md:text-4xl font-bold text-green-600">50+</h3>
+                <p class="text-gray-600 font-medium mt-2">Happy Clients</p>
+            </div>
+            <div
+                class="stat-card text-center p-6 rounded-lg shadow-md bg-gradient-to-br from-purple-50 to-purple-100 hover:shadow-lg transition duration-300">
+                <h3 class="stat-number text-3xl md:text-4xl font-bold text-purple-600">5+</h3>
+                <p class="text-gray-600 font-medium mt-2">Years Experience</p>
+            </div>
+            <div
+                class="stat-card text-center p-6 rounded-lg shadow-md bg-gradient-to-br from-orange-50 to-orange-100 hover:shadow-lg transition duration-300">
+                <h3 class="stat-number text-3xl md:text-4xl font-bold text-orange-600">15</h3>
+                <p class="text-gray-600 font-medium mt-2">Awards Won</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="bg-gray-50 py-16 px-4 md:px-20">
+        <h1 class="text-3xl md:text-4xl font-bold text-center mb-12">Technical Skills</h1>
+        <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
+            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                <h3 class="text-xl font-semibold mb-4 text-gray-800">Frontend Development</h3>
+                <div class="space-y-3">
+                    <div>
+                        <div class="flex justify-between mb-2">
+                            <span class="text-gray-700">HTML & CSS</span>
+                            <span class="text-blue-600 font-semibold">95%</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-2">
+                            <div class="bg-blue-600 h-2 rounded-full" style="width: 95%"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between mb-2">
+                            <span class="text-gray-700">JavaScript</span>
+                            <span class="text-blue-600 font-semibold">90%</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-2">
+                            <div class="bg-blue-600 h-2 rounded-full" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between mb-2">
+                            <span class="text-gray-700">Responsive Design</span>
+                            <span class="text-blue-600 font-semibold">92%</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-2">
+                            <div class="bg-blue-600 h-2 rounded-full" style="width: 92%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                <h3 class="text-xl font-semibold mb-4 text-gray-800">Backend & Database</h3>
+                <div class="space-y-3">
+                    <div>
+                        <div class="flex justify-between mb-2">
+                            <span class="text-gray-700">Python</span>
+                            <span class="text-green-600 font-semibold">85%</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-2">
+                            <div class="bg-green-600 h-2 rounded-full" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between mb-2">
+                            <span class="text-gray-700">SQL & MySQL</span>
+                            <span class="text-green-600 font-semibold">88%</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-2">
+                            <div class="bg-green-600 h-2 rounded-full" style="width: 88%"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between mb-2">
+                            <span class="text-gray-700">Tailwind CSS</span>
+                            <span class="text-green-600 font-semibold">90%</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-2">
+                            <div class="bg-green-600 h-2 rounded-full" style="width: 90%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="bg-white py-16 px-4 md:px-20">
+        <h1 class="text-3xl md:text-4xl font-bold text-center mb-12">Services I Offer</h1>
+        <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            <div
+                class="service-card p-8 bg-gradient-to-br from-blue-500 to-blue-600 text-white rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:scale-105">
+                <div class="text-4xl mb-4"><i class="fas fa-code"></i></div>
+                <h3 class="text-2xl font-semibold mb-3">Web Development</h3>
+                <p class="text-blue-100">Creating responsive, fast, and secure websites using modern technologies and
+                    best practices.</p>
+                <ul class="mt-4 space-y-2 text-sm">
+                    <li>✓ Custom Website Development</li>
+                    <li>✓ Single Page Applications</li>
+                    <li>✓ Full Stack Solutions</li>
+                </ul>
+            </div>
+
+            <div
+                class="service-card p-8 bg-gradient-to-br from-green-500 to-green-600 text-white rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:scale-105">
+                <div class="text-4xl mb-4"><i class="fas fa-pencil-ruler"></i></div>
+                <h3 class="text-2xl font-semibold mb-3">UI/UX Design</h3>
+                <p class="text-green-100">Designing beautiful and intuitive user interfaces that keep users engaged and
+                    coming back.</p>
+                <ul class="mt-4 space-y-2 text-sm">
+                    <li>✓ Responsive Design</li>
+                    <li>✓ User Experience Design</li>
+                    <li>✓ Wireframing & Prototyping</li>
+                </ul>
+            </div>
+
+            <div
+                class="service-card p-8 bg-gradient-to-br from-purple-500 to-purple-600 text-white rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:scale-105">
+                <div class="text-4xl mb-4"><i class="fas fa-database"></i></div>
+                <h3 class="text-2xl font-semibold mb-3">Database Solutions</h3>
+                <p class="text-purple-100">Building robust database architectures that ensure data integrity and optimal
+                    performance.</p>
+                <ul class="mt-4 space-y-2 text-sm">
+                    <li>✓ Database Design</li>
+                    <li>✓ SQL Optimization</li>
+                    <li>✓ Data Management</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="bg-gray-50 py-16 px-4 md:px-20">
+        <h1 class="text-3xl md:text-4xl font-bold text-center mb-12">Client Testimonials</h1>
+        <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            <div class="testimonial-card bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                <div class="flex items-center mb-4">
+                    <i class="fas fa-star text-yellow-400 mr-1"></i>
+                    <i class="fas fa-star text-yellow-400 mr-1"></i>
+                    <i class="fas fa-star text-yellow-400 mr-1"></i>
+                    <i class="fas fa-star text-yellow-400 mr-1"></i>
+                    <i class="fas fa-star text-yellow-400"></i>
+                </div>
+                <p class="text-gray-700 mb-4 italic">"Karib transformed our business website completely. His attention
+                    to detail and quick turnaround time was impressive!"</p>
+                <div class="flex items-center">
+                    <div class="w-12 h-12 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full mr-3"></div>
+                    <div>
+                        <p class="font-semibold text-gray-800">Ahmed Hassan</p>
+                        <p class="text-sm text-gray-600">CEO, TechStart BD</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                <div class="flex items-center mb-4">
+                    <i class="fas fa-star text-yellow-400 mr-1"></i>
+                    <i class="fas fa-star text-yellow-400 mr-1"></i>
+                    <i class="fas fa-star text-yellow-400 mr-1"></i>
+                    <i class="fas fa-star text-yellow-400 mr-1"></i>
+                    <i class="fas fa-star text-yellow-400"></i>
+                </div>
+                <p class="text-gray-700 mb-4 italic">"Working with Karib was a pleasure. He understood our vision and
+                    delivered beyond expectations. Highly recommended!"</p>
+                <div class="flex items-center">
+                    <div class="w-12 h-12 bg-gradient-to-br from-green-400 to-green-600 rounded-full mr-3"></div>
+                    <div>
+                        <p class="font-semibold text-gray-800">Fatima Khan</p>
+                        <p class="text-sm text-gray-600">Marketing Manager, Digital Hub</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                <div class="flex items-center mb-4">
+                    <i class="fas fa-star text-yellow-400 mr-1"></i>
+                    <i class="fas fa-star text-yellow-400 mr-1"></i>
+                    <i class="fas fa-star text-yellow-400 mr-1"></i>
+                    <i class="fas fa-star text-yellow-400 mr-1"></i>
+                    <i class="fas fa-star text-yellow-400"></i>
+                </div>
+                <p class="text-gray-700 mb-4 italic">"Professional, reliable, and skilled developer. He delivered our
+                    e-commerce platform on time and it's performing great!"</p>
+                <div class="flex items-center">
+                    <div class="w-12 h-12 bg-gradient-to-br from-purple-400 to-purple-600 rounded-full mr-3"></div>
+                    <div>
+                        <p class="font-semibold text-gray-800">Rahman Ali</p>
+                        <p class="text-sm text-gray-600">Founder, Online Store Pro</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-white py-16 px-4 md:px-20">
+        <h1 class="text-3xl md:text-4xl font-bold text-center mb-12">Get In Touch</h1>
+        <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-12">
+            <div class="space-y-6">
+                <div class="flex items-start">
+                    <div class="text-3xl text-blue-600 mr-4"><i class="fas fa-map-marker-alt"></i></div>
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Address</h3>
+                        <p class="text-gray-600">123 Web Street, Tech City, BD 1000</p>
+                    </div>
+                </div>
+                <div class="flex items-start">
+                    <div class="text-3xl text-green-600 mr-4"><i class="fas fa-phone"></i></div>
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Phone</h3>
+                        <p class="text-gray-600">+880 123 456 7890</p>
+                    </div>
+                </div>
+                <div class="flex items-start">
+                    <div class="text-3xl text-purple-600 mr-4"><i class="fas fa-envelope"></i></div>
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Email</h3>
+                        <p class="text-gray-600">karib@example.com</p>
+                    </div>
+                </div>
+                <div class="flex items-start">
+                    <div class="text-3xl text-orange-600 mr-4"><i class="fas fa-clock"></i></div>
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Availability</h3>
+                        <p class="text-gray-600">Mon - Fri: 9:00 AM - 6:00 PM</p>
+                    </div>
+                </div>
+            </div>
+
+            <form class="space-y-4 bg-gray-50 p-6 rounded-lg">
+                <input type="text" placeholder="Your Name"
+                    class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500"
+                    required>
+                <input type="email" placeholder="Your Email"
+                    class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500"
+                    required>
+                <input type="text" placeholder="Subject"
+                    class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500"
+                    required>
+                <textarea placeholder="Your Message" rows="5"
+                    class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500 resize-none"
+                    required></textarea>
+                <button type="submit"
+                    class="w-full bg-blue-600 text-white font-semibold py-2 rounded-lg hover:bg-blue-700 transition duration-300">Send
+                    Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- footer Section -->
+
+    <footer class="bg-linear-65 from-gray-500 to-gray-400 text-white mt-20 p-10">
+        <div class=" pt-15 mb-10">
+            <img class="w-20 h-20 rounded-full mx-auto border-2 border-white" src="Images/picture.jpeg" alt="Picture">
+            <h2 class="text-center pt-4 text-xl font-extralight text-shadow-lg/20 ">Sharfuddin Karib</h2>
+
+            <ul class="flex flex-wrap justify-center gap-6 text-lg mt-6">
+                <li class="hover:text-black hover:duration-500"><a href="#home">Home</a></li>
+                <li class="hover:text-black hover:duration-500"><a href="#about">About</a></li>
+                <li class="hover:text-black hover:duration-500"><a href="#projects">Projects</a></li>
+                <li class="hover:text-black hover:duration-500"><a href="#services">Services</a></li>
+                <li class="hover:text-black hover:duration-500"><a href="#contact">Contact</a></li>
+            </ul>
+
+        </div>
+        <div class="border-b border-white w-full mx-auto mt-6"></div>
+
+        <div class="flex flex-col md:flex-row justify-between items-center mt-6 px-4">
+            <p class="tracking-wider text-center md:text-left"> All rights reserved &copy 2025</p>
+
+            <ul class="flex gap-6 text-xl mt-4 md:mt-0">
+                <li class="hover:text-black hover:duration-500"><a href="https://www.facebook.com/karib.hossen.5"
+                        target="_blank"><i class="fa-brands fa-square-facebook "></i></a></li>
+                <li class="hover:text-black hover:duration-500"><a href="#" target="_blank"><i
+                            class="fa-regular fa-envelope "></i></a></li>
+                <li class="hover:text-black hover:duration-500"><a href="#" target="_blank"><i
+                            class="fa-brands fa-linkedin"></i></a></li>
+                <li class="hover:text-black hover:duration-500">
+                    <a href="#" target="_blank"><i class="fa-brands fa-github"></i></a>
+                </li>
+            </ul>
+
+            <ul class="flex gap-4 text-sm mt-4 md:mt-0">
+                <li class="hover:text-black hover:duration-500 cursor-pointer">Terms</li>
+                <li class="hover:text-black hover:duration-500 cursor-pointer">Privacy</li>
+                <li class="hover:text-black hover:duration-500 cursor-pointer">Cookies</li>
+            </ul>
+        </div>
+    </footer>
+
+
+
+
+
+
+    <script src="javascript/index.js"></script>
+
+</body>
+
+</html>
