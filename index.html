@@ -1,445 +1,1600 @@
 <!DOCTYPE html>
-<html lang="en">
 
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/49d12d7293.js" crossorigin="anonymous"></script>
-    <link href="css/output.css" rel="stylesheet">
-    <title>Porfoilo</title>
+  <meta charset="UTF-8" />
+
+<meta
+ name="viewport"
+ content="width=device-width, initial-scale=1.0"
+/>
+
+  <title>
+    Sharfuddin Karib | Web Developer
+  </title>
+
+<meta
+ name="description"
+ content="Portfolio of Sharfuddin Karib, a junior full-stack web developer building practical web applications with React, Django, Django REST Framework, and PostgreSQL."
+/>
+
+<meta
+ name="keywords"
+ content="Sharfuddin Karib, Full Stack Developer, React Developer, Django Developer, DRF Developer, PostgreSQL, Web Developer Bangladesh"
+/>
+
+  <meta name="author" content="Sharfuddin Karib" />
+
+  <link
+    rel="canonical"
+    href="https://karib19.github.io/portfolio/"
+  />
+
+  <!-- Open Graph -->
+
+<meta
+ property="og:title"
+ content="Sharfuddin Karib | Junior Full-Stack Web Developer"
+/>
+
+<meta
+ property="og:description"
+ content="Junior full-stack web developer focused on React, Django, DRF, and PostgreSQL."
+/>
+
+<meta
+ property="og:type"
+ content="website"
+/>
+
+<meta
+ property="og:url"
+ content="https://karib19.github.io/portfolio/"
+/>
+
+<meta
+ property="og:image"
+ content="https://karib19.github.io/portfolio/Images/picture.jpeg"
+/>
+
+  <!-- Twitter -->
+
+<meta
+ name="twitter:card"
+ content="summary_large_image"
+/>
+
+<meta
+ name="twitter:title"
+ content="Sharfuddin Karib | Junior Full-Stack Web Developer"
+/>
+
+<meta
+ name="twitter:description"
+ content="Portfolio of Sharfuddin Karib, a junior full-stack web developer."
+/>
+
+<meta
+ name="twitter:image"
+ content="https://karib19.github.io/portfolio/Images/picture.jpeg"
+/>
+
+  <!-- Favicon -->
+
+  <link
+    rel="icon"
+    type="image/svg+xml"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23090d0c'/%3E%3Ctext x='50' y='62' text-anchor='middle' font-family='Arial' font-size='42' font-weight='800' fill='%2354e39a'%3ESK%3C/text%3E%3C/svg%3E"
+  />
+
+  <!-- Fonts -->
+
+  <link
+    rel="preconnect"
+    href="https://fonts.googleapis.com"
+  />
+
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Font Awesome -->
+
+  <script
+    src="https://kit.fontawesome.com/49d12d7293.js"
+    crossorigin="anonymous"
+  ></script>
+
+  <!-- EmailJS -->
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+  ></script>
+
+  <!-- Main CSS -->
+
+  <link
+    rel="stylesheet"
+    href="css/input.css"
+  />
 </head>
 
-<body class="m-0 p-0 box-border bg-[#f4f4f4]  font-serif">
+<body>
 
-    <!-- Header Section -->
+  <!-- =====================================================
+       NAVBAR
+  ====================================================== -->
 
-    <header class="h-24 md:h-32 bg-linear-65 from-gray-500 to-gray-400" id="home">
-        <div class="flex justify-between fixed w-full bg-linear-65 from-gray-500 to-gray-400
-                h-20 md:h-32 px-4 md:px-16 items-center z-10">
-            <p class="cursor-pointer text-2xl md:text-3xl text-white font-semibold">KARIB</p>
-            <nav>
-                <ul class="hidden md:flex gap-4 lg:gap-8 text-white font-medium text-lg">
-                    <li class="hover:text-black hover:duration-500"><a href="#home">Home</a></li>
-                    <li class="hover:text-black hover:duration-500"><a href="#about">About</a></li>
-                    <li class="hover:text-black hover:duration-500"><a href="#projects">Projects</a></li>
-                    <li class="hover:text-black hover:duration-500"><a href="#services">Services</a></li>
-                    <li class="hover:text-black hover:duration-500"><a href="#contact">Contact</a></li>
-                </ul>
+  <header class="navbar">
+    <div class="container navbar-inner">
 
-                <div class="mt-5 pr-5  text-2xl md:hidden " id="menu">
-                    <a class=" text-white" href="#"><i class="fa-solid fa-list"></i></a>
-                </div>
 
-                <ul id="mobileMenu" class="hidden flex-col absolute left-0 top-20 w-full bg-gray-700
-                text-white py-4 space-y-4 text-left pl-5">
-                    <li class="hover:text-black hover:duration-500"><a href="#home">Home</a></li>
-                    <li class="hover:text-black hover:duration-500"><a href="#about">About</a></li>
-                    <li class="hover:text-black hover:duration-500"><a href="#projects">Projects</a></li>
-                    <li class="hover:text-black hover:duration-500"><a href="#services">Services</a></li>
-                    <li class="hover:text-black hover:duration-500"><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+  <a
+    href="#home"
+    class="logo"
+    aria-label="Sharfuddin Karib home"
+  >
+    SK<span>.</span>
+  </a>
+
+
+  <nav
+    class="nav-links"
+    aria-label="Main navigation"
+  >
+    <a href="#about">About</a>
+
+    <a href="#projects">Projects</a>
+
+    <a href="#skills">Skills</a>
+
+    <a href="#process">Process</a>
+
+    <a href="#contact">Contact</a>
+  </nav>
+
+
+  <div class="nav-actions">
+
+    <a
+      href="https://github.com/karib19"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="icon-link"
+      aria-label="GitHub"
+    >
+      <i class="fa-brands fa-github"></i>
+    </a>
+
+
+    <a
+      href="Sharfuddin_Karib_CV.pdf"
+      class="btn btn-primary"
+      download
+    >
+      <i class="fa-solid fa-download"></i>
+      Resume
+    </a>
+
+
+    <button
+      type="button"
+      class="menu-button"
+      aria-label="Open navigation"
+      aria-expanded="false"
+    >
+      <i class="fa-solid fa-bars"></i>
+    </button>
+
+  </div>
+
+</div>
+
+
+  </header>
+
+  <main>
+
+
+<!-- =====================================================
+     HERO
+====================================================== -->
+
+<section
+  id="home"
+  class="hero"
+>
+
+  <div class="container hero-grid">
+
+    <div class="hero-content">
+
+      <div class="eyebrow">
+        Available for opportunities
+      </div>
+
+
+      <h1>
+        Building practical web applications
+        with
+        <span class="accent">
+          React &amp; Django.
+        </span>
+      </h1>
+
+
+      <p class="hero-description">
+        I am a junior full-stack web developer focused on
+        building useful, responsive, and maintainable web
+        applications with modern frontend and backend
+        technologies.
+      </p>
+
+
+      <div class="hero-buttons">
+
+        <a
+          href="#projects"
+          class="btn btn-primary"
+        >
+          View Projects
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+
+        <a
+          href="#contact"
+          class="btn btn-secondary"
+        >
+          Contact Me
+        </a>
+
+      </div>
+
+
+      <div class="hero-tech">
+
+        <span class="tech-pill">
+          React
+        </span>
+
+        <span class="tech-pill">
+          Django
+        </span>
+
+        <span class="tech-pill">
+          Django REST Framework
+        </span>
+
+        <span class="tech-pill">
+          PostgreSQL
+        </span>
+
+      </div>
+
+    </div>
+
+
+    <!-- CODE CARD -->
+
+    <div class="code-card">
+
+      <div class="code-top">
+
+        <span class="code-dot"></span>
+        <span class="code-dot"></span>
+        <span class="code-dot"></span>
+
+        <span
+          class="code-file"
+          id="codeFile"
+        >
+          Web Developer.js
+        </span>
+
+      </div>
+
+
+      <div
+        class="code-body"
+        id="codeBody"
+      >
+
+        <!-- Slide 1 -->
+
+        <div class="code-slide active">
+
+          <div>
+            <span class="dim">
+              01
+            </span>
+            <span class="white">
+              const
+            </span>
+            developer =
+            <span class="green">
+              {
+            </span>
+          </div>
+
+          <div>
+            <span class="dim">
+              02
+            </span>
+            &nbsp; name:
+            <span class="green">
+              "Karib"
+            </span>,
+          </div>
+
+          <div>
+            <span class="dim">
+              03
+            </span>
+            &nbsp; role:
+            <span class="green">
+              "Full-Stack Web Developer"
+            </span>,
+          </div>
+
+          <div>
+            <span class="dim">
+              04
+            </span>
+            &nbsp; frontend:
+            <span class="green">
+              ["React", "Tailwind"]
+            </span>,
+          </div>
+
+          <div>
+            <span class="dim">
+              05
+            </span>
+            &nbsp; backend:
+            <span class="green">
+              ["Django", "DRF"]
+            </span>,
+          </div>
+
+          <div>
+            <span class="dim">
+              06
+            </span>
+            &nbsp; database:
+            <span class="green">
+              "PostgreSQL"
+            </span>
+          </div>
+
+          <div>
+            <span class="dim">
+              07
+            </span>
+            <span class="green">
+              };
+            </span>
+          </div>
+
         </div>
-    </header>
 
-    <!-- Profile Section -->
 
-    <section
-        class="flex flex-col md:flex-row justify-around items-center text-center md:text-left p-6 md:p-12 bg-white ">
-        <div class="mb-6 md:mb-0">
-            <h4 class="text-4xl md:text-5xl font-bold"><span class="text-[#141212] ">Hey There</span>,<span
-                    class="text-gray-500 ">I'm Karib</span></h4>
-            <h2 class="text-4xl md:text-5xl font-bold tracking-wider "><span class="text-gray-500 ">Web </span> <span
-                    class="text-[#141212] ">Developer</span></h2>
-            <p class="text-lg md:text-xl text-[#141212] font-light pt-5">A self-driven developer always learning and
-                <br>building
-                better web solutions.
-            </p>
+        <!-- Slide 2 -->
+
+        <div class="code-slide">
+
+          <div>
+            <span class="dim">
+              01
+            </span>
+            <span class="white">
+              class
+            </span>
+            Developer:
+          </div>
+
+          <div>
+            <span class="dim">
+              02
+            </span>
+            &nbsp; framework =
+            <span class="green">
+              "Django"
+            </span>
+          </div>
+
+          <div>
+            <span class="dim">
+              03
+            </span>
+            &nbsp; api =
+            <span class="green">
+              "Django REST Framework"
+            </span>
+          </div>
+
+          <div>
+            <span class="dim">
+              04
+            </span>
+            &nbsp; database =
+            <span class="green">
+              "PostgreSQL"
+            </span>
+          </div>
+
+          <div>
+            <span class="dim">
+              05
+            </span>
+            &nbsp; authentication =
+            <span class="green">
+              "JWT"
+            </span>
+          </div>
+
+          <div>
+            <span class="dim">
+              06
+            </span>
+            &nbsp; build_api();
+          </div>
+
         </div>
-        <div>
-            <img class="w-40 md:w-[220px] rounded-4xl border-4 border-solid border-[#333]" src="Images/picture.jpeg"
-                alt="Profile Picture">
+
+
+        <!-- Slide 3 -->
+
+        <div class="code-slide">
+
+          <div>
+            <span class="dim">
+              01
+            </span>
+            <span class="white">
+              const
+            </span>
+            app =
+            <span class="green">
+              &lt;ReactApp /&gt;
+            </span>
+          </div>
+
+          <div>
+            <span class="dim">
+              02
+            </span>
+            &nbsp;
+          </div>
+
+          <div>
+            <span class="dim">
+              03
+            </span>
+            app.features =
+          </div>
+
+          <div>
+            <span class="dim">
+              04
+            </span>
+            &nbsp; [
+            <span class="green">
+              "Responsive UI"
+            </span>,
+          </div>
+
+          <div>
+            <span class="dim">
+              05
+            </span>
+            &nbsp;&nbsp;
+            <span class="green">
+              "REST API"
+            </span>,
+          </div>
+
+          <div>
+            <span class="dim">
+              06
+            </span>
+            &nbsp;&nbsp;
+            <span class="green">
+              "Authentication"
+            </span>
+          </div>
+
+          <div>
+            <span class="dim">
+              07
+            </span>
+            &nbsp; ];
+          </div>
+
         </div>
-    </section>
 
-    <!-- About Section -->
+      </div>
 
-    <section class="mt-30 px-4 md:px-20 mb-40" id="about">
-        <h1 class="text-3xl md:text-4xl font-bold text-center pb-3">About Me</h1>
-        <p class="text-base md:text-xl tracking-wide text-center font-light text-[#141212] leading-relaxed">Hi, I'm
-            <span class="font-semibold">Sharfuddin Karib</span> — a passionate Web Developer learning and building new
-            things every day. I love turning ideas into real, user-friendly websites using clean code and creative
-            design.
-            Expert in HTML, CSS, JavaScript, Python & SQL. I have done more than <span class="font-semibold">100+</span>
-            projects
-            worldwide.
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     ABOUT
+====================================================== -->
+
+<section
+  id="about"
+  class="section"
+>
+
+  <div class="container">
+
+    <p class="section-label reveal">
+      About
+    </p>
+
+    <h2 class="section-title reveal">
+      A developer focused on building useful things.
+    </h2>
+
+    <p class="section-copy reveal">
+      I enjoy turning ideas into practical web applications
+      with clean interfaces, reliable APIs, and structured
+      backend systems.
+    </p>
+
+
+    <div class="about-grid">
+
+      <div class="about-card reveal">
+        <img
+          src="Images/picture.jpeg"
+          alt="Sharfuddin Karib"
+          loading="lazy"
+        />
+      </div>
+
+
+      <div class="about-content">
+
+        <p class="about-text reveal">
+          I am a junior Full-Stack Web Developer with a focus
+          on <strong>React</strong> for frontend development
+          and <strong>Django</strong> with
+          <strong>Django REST Framework</strong> for backend
+          development.
         </p>
-    </section>
 
-    <!-- Project Section -->
 
-    <section id="projects" class="m-30">
-        <h1 class="text-3xl md:text-4xl text-center font-bold mb-10">Projects</h1>
+        <p class="about-text reveal">
+          I have worked on projects involving
+          authentication, REST APIs, CRUD operations,
+          PostgreSQL databases, image uploads, search,
+          comments, and responsive user interfaces.
+        </p>
 
-        <div class="w-full h-auto
-                flex flex-col sm:flex-row
-                flex-wrap justify-center gap-10
-                bg-white pt-10 pb-10">
 
-            <div class="w-[90%] sm:w-[300px] h-[350px] shadow-xl bg-white mx-auto sm:mx-0">
-                <div class="overflow-hidden">
-                    <img class="w-full h-[200px] object-cover hover:scale-110 duration-300"
-                        src="Images/e-commerce_image.jpg" alt="Picture">
-                </div>
-                <h2 class="font-semibold text-center pt-4 text-lg pb-3 hover:underline duration-500">
-                    <a href="https://karib19.github.io/jersey_e-commerce/">E-Commerce Website</a>
-                </h2>
-                <p class="text-center font-extralight">
-                    Built using HTML, CSS, JavaScript<br>
-                    User-friendly UI for online shopping
-                </p>
-            </div>
+        <p class="about-text reveal">
+          My goal is to continue improving my engineering
+          skills while building applications that solve
+          real problems and provide a good user experience.
+        </p>
 
-            <div class="w-[90%] sm:w-[300px] h-[350px] shadow-xl bg-white mx-auto sm:mx-0">
-                <div class="overflow-hidden">
-                    <img class="w-full h-[200px] object-cover hover:scale-110 duration-300"
-                        src="Images/porfoilo_image.jpg" alt="Picture">
-                </div>
-                <h2 class="font-semibold text-center pt-4 text-lg pb-3 hover:underline duration-500">
-                    <a href="https://karib19.github.io/task_manager_app/">Task Manager</a>
-                </h2>
-                <p class="text-center font-extralight">
-                   A Task Manager application that simplifies daily task organization and productivity.</p>
-            </div>
 
-            <div class="w-[90%] sm:w-[300px] h-[350px] shadow-xl bg-white mx-auto sm:mx-0">
-                <div class="overflow-hidden">
-                    <img class="w-full h-[200px] object-cover hover:scale-110 duration-300"
-                        src="Images/student management_image.jpg" alt="Picture">
-                </div>
-                <h2 class="font-semibold text-center pt-4 text-lg pb-3 hover:underline duration-500">
-                    <a href="https://karib19.github.io/weather_app-project/">Weather App</a>
-                </h2>
-                <p class="text-center font-extralight">
-                   A responsive weather application that provides
-                   real-time weather updates using a weather API.
+        <div class="stats">
 
-                </p>
-            </div>
+          <div class="stat reveal">
+            <strong>
+              4
+            </strong>
+
+            <span>
+              Featured Projects
+            </span>
+          </div>
+
+
+          <div class="stat reveal">
+            <strong>
+              React + Django
+            </strong>
+
+            <span>
+              Core Stack
+            </span>
+          </div>
+
+
+          <div class="stat reveal">
+            <strong>
+              REST API
+            </strong>
+
+            <span>
+              Backend Focus
+            </span>
+          </div>
 
         </div>
-    </section>
 
-    <!-- Stats Section -->
-    <section class="bg-white py-16 px-4 md:px-20">
-        <h1 class="text-3xl md:text-4xl font-bold text-center mb-12">My Statistics</h1>
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
-            <div
-                class="stat-card text-center p-6 rounded-lg shadow-md bg-gradient-to-br from-blue-50 to-blue-100 hover:shadow-lg transition duration-300">
-                <h3 class="stat-number text-3xl md:text-4xl font-bold text-blue-600">100+</h3>
-                <p class="text-gray-600 font-medium mt-2">Projects Completed</p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     PROJECTS
+====================================================== -->
+
+<section
+  id="projects"
+  class="section projects"
+>
+
+  <div class="container">
+
+    <p class="section-label reveal">
+      Selected Work
+    </p>
+
+    <h2 class="section-title reveal">
+      Projects built while learning and growing.
+    </h2>
+
+    <p class="section-copy reveal">
+      A selection of full-stack and frontend applications
+      that demonstrate my current development skills.
+    </p>
+
+
+    <div class="projects-slider">
+
+      <button
+        type="button"
+        class="slider-btn slider-prev"
+        aria-label="Previous projects"
+      >
+        <i class="fa-solid fa-chevron-left"></i>
+      </button>
+
+
+      <div class="projects-viewport">
+
+        <div class="project-grid">
+
+
+          <!-- PROJECT 1 -->
+
+          <article class="project-card">
+
+            <div class="project-image">
+              <img
+                src="Images/blog.png"
+                alt="BlogSphere project"
+                loading="lazy"
+              />
             </div>
-            <div
-                class="stat-card text-center p-6 rounded-lg shadow-md bg-gradient-to-br from-green-50 to-green-100 hover:shadow-lg transition duration-300">
-                <h3 class="stat-number text-3xl md:text-4xl font-bold text-green-600">50+</h3>
-                <p class="text-gray-600 font-medium mt-2">Happy Clients</p>
+
+
+            <div class="project-content">
+
+              <div class="project-top">
+
+                <div>
+
+                  <p class="project-number">
+                    01
+                  </p>
+
+                  <h3>
+                    BlogSphere
+                  </h3>
+
+                </div>
+
+                <span class="project-type">
+                  Full Stack
+                </span>
+
+              </div>
+
+
+              <p class="project-description">
+                A modern full-stack blogging platform with
+                authentication, email verification, posts,
+                search, comments, likes, bookmarks, and image
+                uploads.
+              </p>
+
+
+              <div class="project-tags">
+
+                <span>React</span>
+                <span>Django</span>
+                <span>DRF</span>
+                <span>PostgreSQL</span>
+
+              </div>
+
+
+              <div class="project-links">
+
+                <a
+                  href="https://github.com/karib19/Blog-Project"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fa-brands fa-github"></i>
+                  Code
+                </a>
+
+                <a
+                  href="https://blog-project-mu-one.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  Live
+                </a>
+
+              </div>
+
             </div>
-            <div
-                class="stat-card text-center p-6 rounded-lg shadow-md bg-gradient-to-br from-purple-50 to-purple-100 hover:shadow-lg transition duration-300">
-                <h3 class="stat-number text-3xl md:text-4xl font-bold text-purple-600">5+</h3>
-                <p class="text-gray-600 font-medium mt-2">Years Experience</p>
+
+          </article>
+
+
+
+          <!-- PROJECT 2 -->
+
+          <article class="project-card">
+
+            <div class="project-image">
+              <img
+                src="Images/LMS.png"
+                alt="Learning Management System project"
+                loading="lazy"
+              />
             </div>
-            <div
-                class="stat-card text-center p-6 rounded-lg shadow-md bg-gradient-to-br from-orange-50 to-orange-100 hover:shadow-lg transition duration-300">
-                <h3 class="stat-number text-3xl md:text-4xl font-bold text-orange-600">15</h3>
-                <p class="text-gray-600 font-medium mt-2">Awards Won</p>
+
+
+            <div class="project-content">
+
+              <div class="project-top">
+
+                <div>
+
+                  <p class="project-number">
+                    02
+                  </p>
+
+                  <h3>
+                    Learning Management System
+                  </h3>
+
+                </div>
+
+                <span class="project-type">
+                  Full Stack
+                </span>
+
+              </div>
+
+
+              <p class="project-description">
+                A learning management platform with role-based
+                authentication, course management, enrollment,
+                dashboards, and JWT authentication.
+              </p>
+
+
+              <div class="project-tags">
+
+                <span>React</span>
+                <span>Django</span>
+                <span>DRF</span>
+                <span>JWT</span>
+
+              </div>
+
+
+              <div class="project-links">
+
+                <a
+                  href="https://github.com/karib19/LMS_project"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fa-brands fa-github"></i>
+                  Code
+                </a>
+
+                <a
+                  href="https://lms-rosy-alpha-76.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  Live
+                </a>
+
+              </div>
+
             </div>
+
+          </article>
+
+
+
+          <!-- PROJECT 3 -->
+
+          <article class="project-card">
+
+            <div class="project-image">
+              <img
+                src="Images/task_manager.png"
+                alt="Task Manager project"
+                loading="lazy"
+              />
+            </div>
+
+
+            <div class="project-content">
+
+              <div class="project-top">
+
+                <div>
+
+                  <p class="project-number">
+                    03
+                  </p>
+
+                  <h3>
+                    Task Manager
+                  </h3>
+
+                </div>
+
+                <span class="project-type">
+                  Frontend
+                </span>
+
+              </div>
+
+
+              <p class="project-description">
+                A simple task management application focused
+                on creating, completing, and deleting tasks
+                through a clean responsive interface.
+              </p>
+
+
+              <div class="project-tags">
+
+                <span>React</span>
+                <span>Vite</span>
+                <span>Tailwind CSS</span>
+
+              </div>
+
+
+              <div class="project-links">
+
+                <a
+                  href="https://github.com/karib19/task_manager_app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fa-brands fa-github"></i>
+                  Code
+                </a>
+
+                <a
+                  href="https://karib19.github.io/task_manager_app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  Live
+                </a>
+
+              </div>
+
+            </div>
+
+          </article>
+
+
+
+          <!-- PROJECT 4 -->
+
+          <article class="project-card">
+
+            <div class="project-image">
+              <img
+                src="Images/weather_app.png"
+                alt="Weather App project"
+                loading="lazy"
+              />
+            </div>
+
+
+            <div class="project-content">
+
+              <div class="project-top">
+
+                <div>
+
+                  <p class="project-number">
+                    04
+                  </p>
+
+                  <h3>
+                    Weather App
+                  </h3>
+
+                </div>
+
+                <span class="project-type">
+                  Frontend
+                </span>
+
+              </div>
+
+
+              <p class="project-description">
+                A responsive weather application using a weather
+                API to display current conditions, forecasts,
+                search history, and location suggestions.
+              </p>
+
+
+              <div class="project-tags">
+
+                <span>React</span>
+                <span>Weather API</span>
+                <span>Axios</span>
+
+              </div>
+
+
+              <div class="project-links">
+
+                <a
+                  href="https://github.com/karib19/weather_app-project"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fa-brands fa-github"></i>
+                  Code
+                </a>
+
+                <a
+                  href="https://karib19.github.io/weather_app-project/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  Live
+                </a>
+
+              </div>
+
+            </div>
+
+          </article>
+
         </div>
-    </section>
 
-    <!-- Skills Section -->
-    <section class="bg-gray-50 py-16 px-4 md:px-20">
-        <h1 class="text-3xl md:text-4xl font-bold text-center mb-12">Technical Skills</h1>
-        <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
-            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
-                <h3 class="text-xl font-semibold mb-4 text-gray-800">Frontend Development</h3>
-                <div class="space-y-3">
-                    <div>
-                        <div class="flex justify-between mb-2">
-                            <span class="text-gray-700">HTML & CSS</span>
-                            <span class="text-blue-600 font-semibold">95%</span>
-                        </div>
-                        <div class="w-full bg-gray-200 rounded-full h-2">
-                            <div class="bg-blue-600 h-2 rounded-full" style="width: 95%"></div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="flex justify-between mb-2">
-                            <span class="text-gray-700">JavaScript</span>
-                            <span class="text-blue-600 font-semibold">90%</span>
-                        </div>
-                        <div class="w-full bg-gray-200 rounded-full h-2">
-                            <div class="bg-blue-600 h-2 rounded-full" style="width: 90%"></div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="flex justify-between mb-2">
-                            <span class="text-gray-700">Responsive Design</span>
-                            <span class="text-blue-600 font-semibold">92%</span>
-                        </div>
-                        <div class="w-full bg-gray-200 rounded-full h-2">
-                            <div class="bg-blue-600 h-2 rounded-full" style="width: 92%"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      </div>
 
-            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
-                <h3 class="text-xl font-semibold mb-4 text-gray-800">Backend & Database</h3>
-                <div class="space-y-3">
-                    <div>
-                        <div class="flex justify-between mb-2">
-                            <span class="text-gray-700">Python</span>
-                            <span class="text-green-600 font-semibold">85%</span>
-                        </div>
-                        <div class="w-full bg-gray-200 rounded-full h-2">
-                            <div class="bg-green-600 h-2 rounded-full" style="width: 85%"></div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="flex justify-between mb-2">
-                            <span class="text-gray-700">SQL & MySQL</span>
-                            <span class="text-green-600 font-semibold">88%</span>
-                        </div>
-                        <div class="w-full bg-gray-200 rounded-full h-2">
-                            <div class="bg-green-600 h-2 rounded-full" style="width: 88%"></div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="flex justify-between mb-2">
-                            <span class="text-gray-700">Tailwind CSS</span>
-                            <span class="text-green-600 font-semibold">90%</span>
-                        </div>
-                        <div class="w-full bg-gray-200 rounded-full h-2">
-                            <div class="bg-green-600 h-2 rounded-full" style="width: 90%"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Services Section -->
-    <section id="services" class="bg-white py-16 px-4 md:px-20">
-        <h1 class="text-3xl md:text-4xl font-bold text-center mb-12">Services I Offer</h1>
-        <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            <div
-                class="service-card p-8 bg-gradient-to-br from-blue-500 to-blue-600 text-white rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:scale-105">
-                <div class="text-4xl mb-4"><i class="fas fa-code"></i></div>
-                <h3 class="text-2xl font-semibold mb-3">Web Development</h3>
-                <p class="text-blue-100">Creating responsive, fast, and secure websites using modern technologies and
-                    best practices.</p>
-                <ul class="mt-4 space-y-2 text-sm">
-                    <li>✓ Custom Website Development</li>
-                    <li>✓ Single Page Applications</li>
-                    <li>✓ Full Stack Solutions</li>
-                </ul>
-            </div>
+      <button
+        type="button"
+        class="slider-btn slider-next"
+        aria-label="Next projects"
+      >
+        <i class="fa-solid fa-chevron-right"></i>
+      </button>
 
-            <div
-                class="service-card p-8 bg-gradient-to-br from-green-500 to-green-600 text-white rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:scale-105">
-                <div class="text-4xl mb-4"><i class="fas fa-pencil-ruler"></i></div>
-                <h3 class="text-2xl font-semibold mb-3">UI/UX Design</h3>
-                <p class="text-green-100">Designing beautiful and intuitive user interfaces that keep users engaged and
-                    coming back.</p>
-                <ul class="mt-4 space-y-2 text-sm">
-                    <li>✓ Responsive Design</li>
-                    <li>✓ User Experience Design</li>
-                    <li>✓ Wireframing & Prototyping</li>
-                </ul>
-            </div>
+    </div>
 
-            <div
-                class="service-card p-8 bg-gradient-to-br from-purple-500 to-purple-600 text-white rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:scale-105">
-                <div class="text-4xl mb-4"><i class="fas fa-database"></i></div>
-                <h3 class="text-2xl font-semibold mb-3">Database Solutions</h3>
-                <p class="text-purple-100">Building robust database architectures that ensure data integrity and optimal
-                    performance.</p>
-                <ul class="mt-4 space-y-2 text-sm">
-                    <li>✓ Database Design</li>
-                    <li>✓ SQL Optimization</li>
-                    <li>✓ Data Management</li>
-                </ul>
-            </div>
-        </div>
-    </section>
 
-    <!-- Testimonials Section -->
-    <section class="bg-gray-50 py-16 px-4 md:px-20">
-        <h1 class="text-3xl md:text-4xl font-bold text-center mb-12">Client Testimonials</h1>
-        <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            <div class="testimonial-card bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
-                <div class="flex items-center mb-4">
-                    <i class="fas fa-star text-yellow-400 mr-1"></i>
-                    <i class="fas fa-star text-yellow-400 mr-1"></i>
-                    <i class="fas fa-star text-yellow-400 mr-1"></i>
-                    <i class="fas fa-star text-yellow-400 mr-1"></i>
-                    <i class="fas fa-star text-yellow-400"></i>
-                </div>
-                <p class="text-gray-700 mb-4 italic">"Karib transformed our business website completely. His attention
-                    to detail and quick turnaround time was impressive!"</p>
-                <div class="flex items-center">
-                    <div class="w-12 h-12 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full mr-3"></div>
-                    <div>
-                        <p class="font-semibold text-gray-800">Ahmed Hassan</p>
-                        <p class="text-sm text-gray-600">CEO, TechStart BD</p>
-                    </div>
-                </div>
-            </div>
+    <div
+      class="slider-controls"
+      aria-label="Project groups"
+    >
 
-            <div class="testimonial-card bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
-                <div class="flex items-center mb-4">
-                    <i class="fas fa-star text-yellow-400 mr-1"></i>
-                    <i class="fas fa-star text-yellow-400 mr-1"></i>
-                    <i class="fas fa-star text-yellow-400 mr-1"></i>
-                    <i class="fas fa-star text-yellow-400 mr-1"></i>
-                    <i class="fas fa-star text-yellow-400"></i>
-                </div>
-                <p class="text-gray-700 mb-4 italic">"Working with Karib was a pleasure. He understood our vision and
-                    delivered beyond expectations. Highly recommended!"</p>
-                <div class="flex items-center">
-                    <div class="w-12 h-12 bg-gradient-to-br from-green-400 to-green-600 rounded-full mr-3"></div>
-                    <div>
-                        <p class="font-semibold text-gray-800">Fatima Khan</p>
-                        <p class="text-sm text-gray-600">Marketing Manager, Digital Hub</p>
-                    </div>
-                </div>
-            </div>
+      <button
+        type="button"
+        class="slider-dot active"
+        aria-label="Show projects 1 and 2"
+      ></button>
 
-            <div class="testimonial-card bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
-                <div class="flex items-center mb-4">
-                    <i class="fas fa-star text-yellow-400 mr-1"></i>
-                    <i class="fas fa-star text-yellow-400 mr-1"></i>
-                    <i class="fas fa-star text-yellow-400 mr-1"></i>
-                    <i class="fas fa-star text-yellow-400 mr-1"></i>
-                    <i class="fas fa-star text-yellow-400"></i>
-                </div>
-                <p class="text-gray-700 mb-4 italic">"Professional, reliable, and skilled developer. He delivered our
-                    e-commerce platform on time and it's performing great!"</p>
-                <div class="flex items-center">
-                    <div class="w-12 h-12 bg-gradient-to-br from-purple-400 to-purple-600 rounded-full mr-3"></div>
-                    <div>
-                        <p class="font-semibold text-gray-800">Rahman Ali</p>
-                        <p class="text-sm text-gray-600">Founder, Online Store Pro</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+      <button
+        type="button"
+        class="slider-dot"
+        aria-label="Show projects 3 and 4"
+      ></button>
 
-    <!-- Contact Section -->
-    <section id="contact" class="bg-white py-16 px-4 md:px-20">
-        <h1 class="text-3xl md:text-4xl font-bold text-center mb-12">Get In Touch</h1>
-        <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-12">
-            <div class="space-y-6">
-                <div class="flex items-start">
-                    <div class="text-3xl text-blue-600 mr-4"><i class="fas fa-map-marker-alt"></i></div>
-                    <div>
-                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Address</h3>
-                        <p class="text-gray-600">Monir Chor, Nageswari, Kurigram, Bangladesh</p>
-                    </div>
-                </div>
-                <div class="flex items-start">
-                    <div class="text-3xl text-green-600 mr-4"><i class="fas fa-phone"></i></div>
-                    <div>
-                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Phone</h3>
-                        <p class="text-gray-600">+880 1329013828</p>
-                    </div>
-                </div>
-                <div class="flex items-start">
-                    <div class="text-3xl text-purple-600 mr-4"><i class="fas fa-envelope"></i></div>
-                    <div>
-                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Email</h3>
-                        <p class="text-gray-600"><a href="mailto:prokarib@gmail.com" class="text-blue-500 hover:underline">prokarib@gmail.com</a></p>
-                    </div>
-                </div>
-                <div class="flex items-start">
-                    <div class="text-3xl text-orange-600 mr-4"><i class="fas fa-clock"></i></div>
-                    <div>
-                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Availability</h3>
-                        <p class="text-gray-600">Mon - Fri: 9:00 AM - 6:00 PM</p>
-                    </div>
-                </div>
-            </div>
+    </div>
 
-            <form class="space-y-4 bg-gray-50 p-6 rounded-lg">
-                <input type="text" placeholder="Your Name"
-                    class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500"
-                    required>
-                <input type="email" placeholder="Your Email"
-                    class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500"
-                    required>
-                <input type="text" placeholder="Subject"
-                    class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500"
-                    required>
-                <textarea placeholder="Your Message" rows="5"
-                    class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500 resize-none"
-                    required></textarea>
-                <button type="submit"
-                    class="w-full bg-blue-600 text-white font-semibold py-2 rounded-lg hover:bg-blue-700 transition duration-300">Send
-                    Message</button>
-            </form>
-        </div>
-    </section>
+  </div>
 
-    <!-- footer Section -->
+</section>
 
-    <footer class="bg-linear-65 from-gray-500 to-gray-400 text-white mt-20 p-10">
-        <div class=" pt-15 mb-10">
-            <img class="w-20 h-20 rounded-full mx-auto border-2 border-white" src="Images/picture.jpeg" alt="Picture">
-            <h2 class="text-center pt-4 text-xl font-extralight text-shadow-lg/20 ">Sharfuddin Karib</h2>
 
-            <ul class="flex flex-wrap justify-center gap-6 text-lg mt-6">
-                <li class="hover:text-black hover:duration-500"><a href="#home">Home</a></li>
-                <li class="hover:text-black hover:duration-500"><a href="#about">About</a></li>
-                <li class="hover:text-black hover:duration-500"><a href="#projects">Projects</a></li>
-                <li class="hover:text-black hover:duration-500"><a href="#services">Services</a></li>
-                <li class="hover:text-black hover:duration-500"><a href="#contact">Contact</a></li>
-            </ul>
+
+<!-- =====================================================
+     SKILLS
+====================================================== -->
+
+<section
+  id="skills"
+  class="section"
+>
+
+  <div class="container">
+
+    <p class="section-label reveal">
+      Skills
+    </p>
+
+    <h2 class="section-title reveal">
+      Tools I use to build web applications.
+    </h2>
+
+    <p class="section-copy reveal">
+      My current stack covers frontend interfaces, backend
+      APIs, databases, version control, and development tools.
+    </p>
+
+
+    <div class="skills-grid">
+
+      <div class="skill-group reveal">
+
+        <h3>
+          Frontend
+        </h3>
+
+        <div class="skill-list">
+
+          <span class="skill">
+            HTML
+          </span>
+
+          <span class="skill">
+            CSS
+          </span>
+
+          <span class="skill">
+            JavaScript
+          </span>
+
+          <span class="skill">
+            React
+          </span>
+
+          <span class="skill">
+            Redux
+          </span>
+
+          <span class="skill">
+            Tailwind CSS
+          </span>
 
         </div>
-        <div class="border-b border-white w-full mx-auto mt-6"></div>
 
-        <div class="flex flex-col md:flex-row justify-between items-center mt-6 px-4">
-            <p class="tracking-wider text-center md:text-left"> All rights reserved &copy 2025</p>
+      </div>
 
-            <ul class="flex gap-6 text-xl mt-4 md:mt-0">
-                <li class="hover:text-black hover:duration-500"><a href="https://www.facebook.com/Yours.karib.19"
-                        target="_blank"><i class="fa-brands fa-square-facebook "></i></a></li>
-                <li class="hover:text-black hover:duration-500"><a href="mailto:prokarib@gmail.com" target="_blank"><i
-                            class="fa-regular fa-envelope "></i></a></li>
-                <li class="hover:text-black hover:duration-500"><a href="#" target="_blank"><i
-                            class="fa-brands fa-linkedin"></i></a></li>
-                <li class="hover:text-black hover:duration-500">
-                    <a href="https://github.com/karib19" target="_blank"><i class="fa-brands fa-github"></i></a>
-                </li>
-            </ul>
 
-            <ul class="flex gap-4 text-sm mt-4 md:mt-0">
-                <li class="hover:text-black hover:duration-500 cursor-pointer">Terms</li>
-                <li class="hover:text-black hover:duration-500 cursor-pointer">Privacy</li>
-                <li class="hover:text-black hover:duration-500 cursor-pointer">Cookies</li>
-            </ul>
+      <div class="skill-group reveal">
+
+        <h3>
+          Backend
+        </h3>
+
+        <div class="skill-list">
+
+          <span class="skill">
+            Python
+          </span>
+
+          <span class="skill">
+            Django
+          </span>
+
+          <span class="skill">
+            DRF
+          </span>
+
+          <span class="skill">
+            REST API
+          </span>
+
+          <span class="skill">
+            JWT
+          </span>
+
+          <span class="skill">
+            CRUD
+          </span>
+
         </div>
-    </footer>
+
+      </div>
+
+
+      <div class="skill-group reveal">
+
+        <h3>
+          Database
+        </h3>
+
+        <div class="skill-list">
+
+          <span class="skill">
+            PostgreSQL
+          </span>
+
+          <span class="skill">
+            MySQL
+          </span>
+
+          <span class="skill">
+            Relational Database
+          </span>
+
+        </div>
+
+      </div>
+
+
+      <div class="skill-group reveal">
+
+        <h3>
+          Tools
+        </h3>
+
+        <div class="skill-list">
+
+          <span class="skill">
+            Git
+          </span>
+
+          <span class="skill">
+            GitHub
+          </span>
+
+          <span class="skill">
+            VS Code
+          </span>
+
+          <span class="skill">
+            PyCharm
+          </span>
+
+          <span class="skill">
+            XAMPP
+          </span>
+
+          <span class="skill">
+            Deployment
+          </span>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
 
 
 
+<!-- =====================================================
+     PROCESS
+====================================================== -->
+
+<section
+  id="process"
+  class="section process"
+>
+
+  <div class="container">
+
+    <p class="section-label reveal">
+      Process
+    </p>
+
+    <h2 class="section-title reveal">
+     How I approach to building a project.
+    </h2>
+
+    <p class="section-copy reveal">
+      I break projects into clear steps so the interface,
+      backend, and final deployment stay manageable.
+    </p>
+
+
+    <div class="process-grid">
+
+      <div class="process-card reveal">
+
+        <span class="process-number">
+          01
+        </span>
+
+        <h3>
+          Understand
+        </h3>
+
+        <p>
+          Understand the requirements, users, features,
+          data, and overall project structure before coding.
+        </p>
+
+      </div>
+
+
+      <div class="process-card reveal">
+
+        <span class="process-number">
+          02
+        </span>
+
+        <h3>
+          Build
+        </h3>
+
+        <p>
+          Build the frontend and backend step by step,
+          keeping components, APIs, and database logic organized.
+        </p>
+
+      </div>
+
+
+      <div class="process-card reveal">
+
+        <span class="process-number">
+          03
+        </span>
+
+        <h3>
+          Test
+        </h3>
+
+        <p>
+          Test features, API responses, authentication,
+          responsive layouts, and common user flows.
+        </p>
+
+      </div>
+
+
+      <div class="process-card reveal">
+
+        <span class="process-number">
+          04
+        </span>
+
+        <h3>
+          Deploy
+        </h3>
+
+        <p>
+          Prepare the application for deployment and verify
+          that the production frontend and backend work together.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
 
 
 
-    <script src="javascript/index.js"></script>
+<!-- =====================================================
+     CONTACT
+====================================================== -->
+
+<section
+  id="contact"
+  class="section contact-section"
+>
+
+  <div class="container">
+
+    <div class="contact-box">
+
+      <div class="contact-intro">
+
+        <p class="section-label reveal">
+          Contact
+        </p>
+
+        <h2 class="reveal">
+          Have a project in mind?
+          Let's talk.
+        </h2>
+
+        <p class="reveal">
+          If you are looking for a junior developer for a
+          website, web application, frontend, backend, or
+          full-stack project, feel free to get in touch.
+        </p>
+
+
+        <div class="contact-info-list">
+
+          <a
+            href="mailto:prokarib@gmail.com"
+            class="contact-info reveal"
+          >
+
+            <span class="contact-info-icon">
+              <i class="fa-solid fa-envelope"></i>
+            </span>
+
+            <span>
+              <small>
+                Email
+              </small>
+
+              <strong>
+                prokarib@gmail.com
+              </strong>
+            </span>
+
+          </a>
+
+
+          <a
+            href="https://github.com/karib19"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="contact-info reveal"
+          >
+
+            <span class="contact-info-icon">
+              <i class="fa-brands fa-github"></i>
+            </span>
+
+            <span>
+              <small>
+                GitHub
+              </small>
+
+              <strong>
+                github.com/karib19
+              </strong>
+            </span>
+
+          </a>
+
+
+          <a
+            href="https://www.linkedin.com/in/shekh-sharfuddin-ahmed-karib"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="contact-info reveal"
+          >
+
+            <span class="contact-info-icon">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </span>
+
+            <span>
+              <small>
+                LinkedIn
+              </small>
+
+              <strong>
+                LinkedIn Profile
+              </strong>
+            </span>
+
+          </a>
+
+
+          <a
+            href="Sharfuddin_Karib_CV.pdf"
+            class="contact-info reveal"
+            download
+          >
+
+            <span class="contact-info-icon">
+              <i class="fa-solid fa-file-arrow-down"></i>
+            </span>
+
+            <span>
+              <small>
+                Resume
+              </small>
+
+              <strong>
+                Download CV
+              </strong>
+            </span>
+
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <!-- CONTACT FORM -->
+
+      <form
+        id="contact-form"
+        class="contact-form reveal"
+      >
+
+        <div class="form-row">
+
+          <div class="form-group">
+
+            <label for="from_name">
+              Name
+            </label>
+
+            <input
+              type="text"
+              id="from_name"
+              name="from_name"
+              placeholder="Your name"
+              autocomplete="name"
+              required
+            />
+
+          </div>
+
+
+          <div class="form-group">
+
+            <label for="from_email">
+              Email
+            </label>
+
+            <input
+              type="email"
+              id="from_email"
+              name="from_email"
+              placeholder="you@example.com"
+              autocomplete="email"
+              required
+            />
+
+          </div>
+
+        </div>
+
+
+        <div class="form-group">
+
+          <label for="message">
+            Message
+          </label>
+
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Tell me about your project..."
+            required
+          ></textarea>
+
+        </div>
+
+
+        <button
+          type="submit"
+          class="btn btn-primary contact-submit"
+          id="contact-submit"
+        >
+          Send Message
+          <i class="fa-solid fa-paper-plane"></i>
+        </button>
+
+
+        <p
+          class="form-status"
+          id="form-status"
+          aria-live="polite"
+        ></p>
+
+      </form>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+  </main>
+
+  <!-- =====================================================
+       FOOTER
+  ====================================================== -->
+
+  <footer class="footer">
+
+
+<div class="container footer-inner">
+
+  <p>
+    © <span id="year"></span>
+    Sharfuddin Karib.
+    All rights reserved.
+  </p>
+
+
+  <div class="footer-links">
+
+    <a
+      href="https://github.com/karib19"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="GitHub"
+    >
+      <i class="fa-brands fa-github"></i>
+    </a>
+
+
+    <a
+      href="https://www.linkedin.com/in/shekh-sharfuddin-ahmed-karib"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="LinkedIn"
+    >
+      <i class="fa-brands fa-linkedin-in"></i>
+    </a>
+
+
+    <a
+      href="mailto:prokarib@gmail.com"
+      aria-label="Email"
+    >
+      <i class="fa-solid fa-envelope"></i>
+    </a>
+
+  </div>
+
+</div>
+
+
+  </footer>
+
+  <!-- =====================================================
+       MAIN JAVASCRIPT
+  ====================================================== -->
+
+  <script src="javascript/index.js"></script>
 
 </body>
-
 </html>
