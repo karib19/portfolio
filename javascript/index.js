@@ -126,7 +126,7 @@ if (
 slider &&
 viewport &&
 track &&
-originalCards.length === 4 &&
+originalCards.length >= 1 &&
 prevBtn &&
 nextBtn
 ) {
@@ -207,26 +207,11 @@ const getRealIndex = () => {
 const updateDots = () => {
   if (!dots.length) return;
 
-  const realIndex =
-    getRealIndex();
-
-  /*
-    Desktop:
-    01-02 = first dot
-    03-04 = second dot
-
-    Mobile:
-    Project 01-02 = first dot
-    Project 03-04 = second dot
-  */
-  const dotIndex =
-    Math.floor(realIndex / 2);
+  const realIndex = getRealIndex();
+  const dotIndex = Math.floor(realIndex / cardsPerView);
 
   dots.forEach((dot, index) => {
-    dot.classList.toggle(
-      "active",
-      index === dotIndex
-    );
+    dot.classList.toggle("active", index === dotIndex);
   });
 };
 
