@@ -98,6 +98,7 @@ portfolio/
 │   ├── blog.png
 │   ├── LMS.png
 │   ├── task_manager.png
+│   ├── spendly.png
 │   └── weather_app.png
 │
 ├── css/
