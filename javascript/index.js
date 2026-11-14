@@ -1,8 +1,6 @@
-
 document.addEventListener("DOMContentLoaded", () => {
-  /* =========================================================
-     MOBILE NAVIGATION
-  ========================================================= */
+
+    //  MOBILE NAVIGATION
 
   const menuBtn = document.querySelector(".menu-button");
   const navLinks = document.querySelector(".nav-links");
@@ -21,9 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  /* =========================================================
-     DARK / LIGHT MODE
-  ========================================================= */
+    //  DARK / LIGHT MODE
 
   const themeToggle = document.getElementById("theme-toggle");
   const themeIcon = themeToggle?.querySelector("i");
@@ -74,9 +70,8 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  /* =========================================================
-     INTRO LOADER
-  ========================================================= */
+
+    //  INTRO LOADER
 
   const introLoader = document.getElementById("intro-loader");
 
@@ -106,17 +101,15 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  /* =========================================================
-     EMAILJS CONTACT FORM
-  ========================================================= */
+    //  EMAILJS CONTACT FORM
 
   const contactForm = document.getElementById("contact-form");
   const contactSubmit = document.getElementById("contact-submit");
   const formStatus = document.getElementById("form-status");
 
-  const EMAILJS_PUBLIC_KEY = "ksVNj0MJb5_igTrbx";
-  const EMAILJS_SERVICE_ID = "service_32iv20n";
-  const EMAILJS_TEMPLATE_ID = "template_ibe84ae";
+  const EMAILJS_PUBLIC_KEY = "PUBLIC_KEY";
+  const EMAILJS_SERVICE_ID = "SERVICE_ID";
+  const EMAILJS_TEMPLATE_ID = "TEMPLATE_ID";
 
   if (window.emailjs) {
     window.emailjs.init({
@@ -181,9 +174,8 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  /* =========================================================
-     HERO CODE SLIDER
-  ========================================================= */
+
+    //  HERO CODE SLIDER
 
   const codeSlides = document.querySelectorAll(".code-slide");
   const codeFile = document.getElementById("codeFile");
@@ -224,9 +216,7 @@ document.addEventListener("DOMContentLoaded", () => {
     startCodeSlider();
   }
 
-  /* =========================================================
-     PROJECT DATA
-  ========================================================= */
+    //  PROJECT DATA
 
   const projects = [
     {
@@ -363,9 +353,7 @@ document.addEventListener("DOMContentLoaded", () => {
     return card;
   };
 
-  /* =========================================================
-     PROJECT COUNT
-  ========================================================= */
+    //  PROJECT COUNT
 
   const projectCount = document.querySelector("[data-project-count]");
 
@@ -373,9 +361,7 @@ document.addEventListener("DOMContentLoaded", () => {
     projectCount.textContent = projects.length;
   }
 
-  /* =========================================================
-     PROJECT SLIDER
-  ========================================================= */
+    //  PROJECT SLIDER
 
   const slider = document.querySelector(".projects-slider");
   const viewport = document.querySelector(".projects-viewport");
@@ -623,9 +609,7 @@ document.addEventListener("DOMContentLoaded", () => {
     startAutoSlide();
   }
 
-  /* =========================================================
-     SCROLL REVEAL
-  ========================================================= */
+  // SCROLL REVEAL
 
   const revealElements = document.querySelectorAll(".reveal");
 
@@ -653,9 +637,9 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  /* =========================================================
-     FOOTER YEAR
-  ========================================================= */
+
+    //  FOOTER YEAR
+
 
   const yearElement = document.getElementById("year");
 
